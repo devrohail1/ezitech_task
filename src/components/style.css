@@ -1,0 +1,24 @@
+.animate-slider {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.animate-slider img {
+  flex-shrink: 0;
+}
+
+.animate-slider {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100% / 2)
+    ); /* Move by half width (one set of images) */
+  }
+}
