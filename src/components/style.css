@@ -17,8 +17,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      calc(-100% / 2)
-    ); /* Move by half width (one set of images) */
+    transform: translateX(calc(-100% / 2));
   }
 }
